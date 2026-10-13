@@ -30,12 +30,12 @@ const skills = [
   { name: 'CSS', icon: SiCss, color: '#1572b6' },
   { name: 'Python', icon: SiPython, color: '#3776ab' },
   { name: 'Java', icon: FaJava, color: '#ed8b00' },
-  { name: 'MongoDB', icon: SiMongodb, color: '#47a248' },
-  { name: 'Node.js', icon: SiNodedotjs, color: '#5fa04e' },
-  { name: 'Express.js', icon: SiExpress, color: 'currentColor' },
-  { name: 'React.js', icon: SiReact, color: '#61dafb' },
   { name: 'Git', icon: SiGit, color: '#f05032' },
   { name: 'C#', icon: SiDotnet, color: '#512bd4' },
+  { name: 'MongoDB', icon: SiMongodb, color: '#47a248' },
+  { name: 'Express.js', icon: SiExpress, color: 'currentColor' },
+  { name: 'React.js', icon: SiReact, color: '#61dafb' },
+  { name: 'Node.js', icon: SiNodedotjs, color: '#5fa04e' },
 ];
 
 const projects = [
