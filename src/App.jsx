@@ -33,7 +33,6 @@ const projects = [
     description:
       'Contributed to a web-based ID generation system, including work on user authentication and diagnosing login issues. The work included a MERN-stack login REST API and admin-side integration.',
     technologies: ['JavaScript', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'JWT'],
-    url: 'https://example.com/project-squarehub',
     accent: 'cyan',
     nda: true,
   },
@@ -44,7 +43,6 @@ const projects = [
     description:
       'Helped turn the team\'s original concept and story into a university sports platform. JP\'s primary responsibility was frontend development while contributing within a MERN-stack project.',
     technologies: ['React.js', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB'],
-    url: 'https://example.com/project-cvsu-athletica',
     accent: 'violet',
     image: cvsuAthleticaImage,
   },
@@ -55,7 +53,7 @@ const projects = [
     description:
       'Developed core gameplay systems such as combat, upgrades, and progression, and implemented enemy AI using Unity NavMeshAgent. Used ScriptableObjects for modular game architecture.',
     technologies: ['C#', 'Unity', 'NavMeshAgent', 'ScriptableObjects'],
-    url: 'https://example.com/project-code-red',
+    url: 'https://drive.google.com/drive/folders/1aO-sqK_EM_ivyZJlcSDW0Gi63S0nPSs0?usp=sharing',
     accent: 'blue',
     image: gameDevImage,
   },
@@ -533,15 +531,17 @@ function App() {
                       </span>
                     ))}
                   </div>
-                  <a
-                    className="secondary-button"
-                    href={project.url}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label={`Learn more about ${project.name}`}
-                  >
-                    LEARN MORE
-                  </a>
+                  {project.url && (
+                    <a
+                      className="secondary-button"
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={`Learn more about ${project.name}`}
+                    >
+                      LEARN MORE
+                    </a>
+                  )}
                 </div>
               </article>
             ))}
