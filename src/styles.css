@@ -612,6 +612,29 @@ textarea:focus-visible {
   border-color: rgba(103, 162, 255, 0.3);
 }
 
+:root[data-theme='light'] .project-row {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+:root[data-theme='light'] .project-visual {
+  background: linear-gradient(135deg, rgba(218, 235, 249, 0.96), rgba(226, 224, 255, 0.92));
+  box-shadow: inset 0 0 0 1px rgba(46, 72, 106, 0.08);
+}
+
+:root[data-theme='light'] .project-visual--nda {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(22, 137, 204, 0.16), transparent 38%),
+    linear-gradient(135deg, rgba(232, 242, 252, 0.98), rgba(222, 231, 250, 0.98));
+}
+
+:root[data-theme='light'] .project-visual--nda strong {
+  color: var(--text-primary);
+}
+
+:root[data-theme='light'] .project-visual--nda small {
+  color: var(--text-secondary);
+}
+
 .project-row--reverse .project-visual-wrap {
   order: 2;
 }
@@ -785,6 +808,10 @@ textarea:focus-visible {
   color: var(--text-primary);
   font-size: 0.72rem;
   font-weight: 600;
+}
+
+:root[data-theme='light'] .project-tag {
+  background: rgba(70, 112, 166, 0.1);
 }
 
 .contact-card {
