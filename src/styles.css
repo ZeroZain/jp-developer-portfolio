@@ -398,7 +398,7 @@ textarea:focus-visible {
 .profile-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center bottom;
   mix-blend-mode: normal;
 }
@@ -994,7 +994,10 @@ textarea:focus-visible {
   }
 
   .about-section .photo-placeholder {
-    height: 300px;
+    width: min(100%, 320px);
+    height: auto;
+    aspect-ratio: 491 / 509;
+    align-self: center;
   }
 
   .about-section .bio {
