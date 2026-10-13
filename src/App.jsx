@@ -661,7 +661,13 @@ function App() {
               <path d="M5.2 3.6A2.2 2.2 0 1 1 .8 3.6a2.2 2.2 0 0 1 4.4 0ZM1.1 8h4.2v12.9H1.1V8Zm6.8 0h4v1.8h.1c.6-1.1 2-2.2 4.1-2.2 4.4 0 5.2 2.9 5.2 6.7v6.6h-4.2v-5.8c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1v5.9H7.9V8Z" />
             </svg>
           </a>
-          <a href={`mailto:${portfolioConfig.email}`} aria-label="Email JP" className="social-link">
+          <a
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(portfolioConfig.email)}`}
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Email JP with Gmail"
+            className="social-link"
+          >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M3.5 6.5A2.5 2.5 0 0 1 6 4h12a2.5 2.5 0 0 1 2.5 2.5v11A2.5 2.5 0 0 1 18 18H6a2.5 2.5 0 0 1-2.5-2.5v-11Zm1.6 1.2 7.1 5.2 7.1-5.2H5.1Zm14.4 10.3V8.4l-6.8 5-6.8-5v9.6c0 .3.2.5.5.5h12.6c.3 0 .5-.2.5-.5Z" />
             </svg>
