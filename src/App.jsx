@@ -1,4 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
+import { FaJava } from 'react-icons/fa6';
+import {
+  SiCss,
+  SiDotnet,
+  SiExpress,
+  SiGit,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
+  SiPython,
+  SiReact,
+} from 'react-icons/si';
 import profileBlack from '../Profile/Profile-Black.png';
 import profileWhite from '../Profile/Profile-White.png';
 import cvsuAthleticaImage from '../Works/cvsu_athletica.png';
@@ -12,17 +25,17 @@ const portfolioConfig = {
 };
 
 const skills = [
-  { name: 'JavaScript', icon: 'JS' },
-  { name: 'HTML', icon: 'HTML' },
-  { name: 'CSS', icon: 'CSS' },
-  { name: 'Python', icon: 'PY' },
-  { name: 'Java', icon: 'JAVA' },
-  { name: 'MongoDB', icon: 'MDB' },
-  { name: 'Node.js', icon: 'NODE' },
-  { name: 'Express.js', icon: 'EXP' },
-  { name: 'React.js', icon: 'REACT' },
-  { name: 'Git', icon: 'GIT' },
-  { name: 'C#', icon: 'C#' },
+  { name: 'JavaScript', icon: SiJavascript, color: '#f7df1e' },
+  { name: 'HTML', icon: SiHtml5, color: '#e34f26' },
+  { name: 'CSS', icon: SiCss, color: '#1572b6' },
+  { name: 'Python', icon: SiPython, color: '#3776ab' },
+  { name: 'Java', icon: FaJava, color: '#ed8b00' },
+  { name: 'MongoDB', icon: SiMongodb, color: '#47a248' },
+  { name: 'Node.js', icon: SiNodedotjs, color: '#5fa04e' },
+  { name: 'Express.js', icon: SiExpress, color: 'currentColor' },
+  { name: 'React.js', icon: SiReact, color: '#61dafb' },
+  { name: 'Git', icon: SiGit, color: '#f05032' },
+  { name: 'C#', icon: SiDotnet, color: '#512bd4' },
 ];
 
 const projects = [
@@ -497,9 +510,7 @@ function App() {
               <div className="skills-grid" aria-label="Skills list">
                 {skills.map((skill) => (
                   <div className="skill-card" key={skill.name}>
-                    <span className="skill-icon" aria-hidden="true">
-                      {skill.icon}
-                    </span>
+                    <skill.icon className="skill-icon" style={{ color: skill.color }} aria-hidden="true" />
                     <span className="skill-name">{skill.name}</span>
                   </div>
                 ))}
